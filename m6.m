@@ -14,13 +14,13 @@ plot(x, y, 'b-', 'LineWidth', 2);
 grid on;
 
 % Add labels and title
-xlabel('x (Independent Variable)');
-ylabel('y (Dependent Variable)');
-title('Plot of y = 36x / (ln(1.5x) - 1.37)');
+xlabel('Pd in mTorr*m');
+ylabel('Breakdown Voltage in V');
+title('Breakdown voltage vs pressure*distance of a capacitive plasma chamber design');
 
 % Adjust the axis to see the curve better if there are asymptotes
 % limiting y-axis helps if there's a vertical asymptote causing spikes
-ylim([-500 500]); 
+ylim([200 800]); 
 
 % Optional: Add a line for the vertical asymptote if it exists in range
 % The denominator is zero when ln(1.5x) = 1.37
